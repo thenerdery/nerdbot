@@ -1,6 +1,6 @@
 # Nerd-bot
 
-This is the Nerdery version of GitHub's Campfire bot, hubot.
+This is the Nerdery's hubot.
 
 ## Contributing
 
