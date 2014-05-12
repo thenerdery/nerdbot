@@ -22,7 +22,7 @@
   "dependencies": {
     "hubot": ">= 2.6.0 < 3.0.0",
     "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-hipchat": "~2.6.4"
+    "hubot-hipchat": "https://github.com/MJSmith5/hubot-hipchat/tarball/master"
   },
   "engines": {
     "node": ">= 0.8.x",
