@@ -3,4 +3,6 @@
   "meme_captain.coffee", "news.coffee", "remind.coffee", "wikipedia.coffee",
   "sensitive.coffee", "scotch.coffee", "roll.coffee", "pomodoro.coffee",
   "polite.coffee", "nice.coffee", "mtg.coffee", "hello.coffee",
-  "ruby.coffee" ]
+  "ruby.coffee", "advice.coffee", "ambush.coffee", "applause.coffee",
+  "ascii.coffee", "beeradvocate.coffee", "cleverbot.coffee", "commitmessage.coffee",
+  "days_since.coffee", "flip.coffee", "google.coffee"]
