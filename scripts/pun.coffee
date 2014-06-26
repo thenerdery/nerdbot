@@ -14,7 +14,7 @@
 #   PFB
 
 module.exports = (robot) ->
-  robot.hear /pun( me)?/i, (msg) ->
+  robot.respond /pun( me)?/i, (msg) ->
     quotes = [
       "I tried to catch some fog. I mist.",
       "When chemists die, they barium.",
