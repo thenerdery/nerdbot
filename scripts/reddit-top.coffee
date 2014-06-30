@@ -8,7 +8,8 @@
 #   None
 #
 # Commands:
-#   hubot reddit me <subreddit> - A random top (today) post from the specified subreddit. Tries to find a picture if possible
+#   nerdbot reddit me - A random top (today) post from the front page.
+#   nerdbot reddit me image - A random top (today) image from the front page.
 #
 # Author:
 #   artfuldodger
@@ -17,36 +18,28 @@ module.exports = (robot) ->
   robot.respond /reddit me( .+)*/i, (msg) ->
     reddit msg, msg.match[1]?.trim()
 
-reddit = (msg, subreddit) ->
-  url = if subreddit? then "http://www.reddit.com/r/#{subreddit}/top.json" else "http://www.reddit.com/top.json"
+reddit = (msg, type) ->
+  url = "http://www.reddit.com/top.json"
   msg
     .http(url)
       .get() (err, res, body) ->
 
-        # Sometimes when a subreddit doesn't exist, it wants to redirect you to the search page.
-        # Oh, and it doesn't send back 302s as JSON
-        if body?.match(/^302/)?[0] == '302'
-          msg.send "That subreddit does not seem to exist."
-          return
+        listings = JSON.parse(body).data.children
 
-        posts = JSON.parse(body)
+        posts = []
+        imgPosts = []
 
-        # If the response has an error attribute, let's get out of here.
-        if posts.error?
-          msg.send "That doesn't seem to be a valid subreddit. [http response #{posts.error}]"
-          return
+        # SFW Filter
+        for listing in listings
+          if !listing.data.over_18
+            posts.push(listing)
+            if listing.data.domain == "i.imgur.com"
+              imgPosts.push(listing)
 
-        unless posts.data?.children? && posts.data.children.length > 0
-          msg.send "While that subreddit exists, there does not seem to be anything there."
-          return
-
-        post = getPost(posts)
-
-        tries_to_find_picture = 0
-
-        while post?.domain != "i.imgur.com" && tries_to_find_picture < 30
+        if type.match(/pic|pics|pictures|img|image|images/)
+          post = getPost(imgPosts)
+        else
           post = getPost(posts)
-          tries_to_find_picture++
 
         # Send pictures with the url on one line so Campfire displays it as an image
         if post.domain == 'i.imgur.com'
@@ -56,5 +49,5 @@ reddit = (msg, subreddit) ->
           msg.send "#{post.title} - #{post.url} - http://www.reddit.com#{post.permalink}"
 
 getPost = (posts) ->
-  random = Math.round(Math.random() * posts.data.children.length)
-  posts.data.children[random]?.data
+  random = Math.floor(Math.random() * posts.length)
+  posts[random]?.data
