@@ -1,5 +1,5 @@
 # Description:
-#   None
+#   Fetches random reddit post. Reworked from original reddit-random-top.coffee script
 #
 # Dependencies:
 #   None
@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot a reddit <subreddit> - A random top (today) post from the specified subreddit. Tries to find a picture if possible
+#   reddit me <subreddit> - A random top (today) post from the specified subreddit. Tries to find a picture if possible
 #
 # Author:
 #   artfuldodger
