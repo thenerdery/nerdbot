@@ -8,13 +8,13 @@
 #   None
 #
 # Commands:
-#   reddit me <subreddit> - A random top (today) post from the specified subreddit. Tries to find a picture if possible
+#   hubot reddit me <subreddit> - A random top (today) post from the specified subreddit. Tries to find a picture if possible
 #
 # Author:
 #   artfuldodger
 
 module.exports = (robot) ->
-  robot.respond /reddit me ( .+)*/i, (msg) ->
+  robot.respond /reddit me( .+)*/i, (msg) ->
     reddit msg, msg.match[1]?.trim()
 
 reddit = (msg, subreddit) ->
