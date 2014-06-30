@@ -36,7 +36,7 @@ reddit = (msg, type) ->
             if listing.data.domain == "i.imgur.com"
               imgPosts.push(listing)
 
-        if type? && type.match(/pic|pics|pictures|img|image|images/)
+        if type?.match(/pic|pics|pictures|img|image|images/)
           post = getPost(imgPosts)
         else
           post = getPost(posts)
