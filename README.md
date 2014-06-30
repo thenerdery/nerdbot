@@ -4,8 +4,8 @@ This is The Nerdery's hubot. Nerds: Hop in the "Nerd Bot" room if you have quest
 
 ## Contributing
 
-To contribute a [script](https://github.com/github/hubot/blob/master/docs/scripting.md):
+To add new commands, find an [existing Hubot script](http://hubot-script-catalog.herokuapp.com/), or [write your own](https://github.com/github/hubot/blob/master/docs/scripting.md):
 
 * Fork the repo, and clone it locally.
-* Hack that sweet magic that you do.
+* Add .coffee file to `scripts` folder
 * Push to your fork and submit a pull request.
