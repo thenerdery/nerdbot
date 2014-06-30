@@ -8,8 +8,8 @@
 #   None
 #
 # Commands:
-#   nerdbot reddit me - A random top (today) post from the front page.
-#   nerdbot reddit me image - A random top (today) image from the front page.
+#   hubot reddit me - A random top (today) post from the front page.
+#   hubot reddit me image - A random top (today) image from the front page.
 #
 # Author:
 #   artfuldodger
