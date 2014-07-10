@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   pun me - Get a pun
+#   hubot pun me - Get a pun
 #
 # Author:
 #   PFB
