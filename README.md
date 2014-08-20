@@ -1,6 +1,6 @@
 # Nerd-bot
 
-This is The Nerdery's hubot. Nerds: Hop in the "Nerd Bot" room if you have questions.
+This is The Nerdery's [Hubot](https://github.com/github/hubot). Nerds: Hop in the "Nerd Bot" room if you have questions.
 
 ## Contributing
 
