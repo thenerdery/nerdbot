@@ -36,6 +36,7 @@ module.exports = (robot) ->
       "What does a clock do when it's hungry? It goes back four seconds.",
       "I wondered why the baseball was getting bigger. Then it hit me!",
       "Broken pencils are pointless.",
+      "Never trust an atom, they make up everything.",
       "I don't recommend dating bridge builders, they have truss issues."
     ]
     msg.send msg.random quotes
