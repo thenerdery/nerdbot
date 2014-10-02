@@ -17,7 +17,7 @@
 #
 # Author:
 #   stuartf
-#   
+#
 class Karma
 
   constructor: (@robot) ->
@@ -81,11 +81,9 @@ class Karma
     sorted.slice(-n).reverse()
 
 module.exports = (robot) ->
-   robot.logger.warning "karma.coffee has merged with plusplus.coffee and moved from hubot-scripts to its own package. Remove it from your hubot-scripts.json and see https://github.com/ajacksified/hubot-plusplus for upgrade instructions"
-
   karma = new Karma robot
   allow_self = process.env.KARMA_ALLOW_SELF or "true"
-  
+
   robot.hear /^(\S+[^+:\s])[: ]*\+\+($)/, (msg) ->
     subject = msg.match[1].toLowerCase()
     if allow_self is true or msg.message.user.name.toLowerCase() != subject
