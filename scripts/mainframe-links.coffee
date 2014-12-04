@@ -8,14 +8,19 @@
 #   None
 #
 # Commands:
-#   [WS]O\d{6} - Return a Work Order or Sales Order link
-#
+#   W0\d{6} - Return a Work Order link
+#   SO\d{6} - Return a Sales Order link
 # Author:
 #   sbausch@nerdery.com
 
 
 module.exports = (robot) ->
-  robot.respond /[WS]O\d{6}/, (msg) ->
+  robot.respond /W0\d{6}/, (msg) ->
     orderNumber = msg.match[0]
-    msg.reply "https://mainframe.nerdery.com/search?q=#{orderNumber}"
+    msg.send "https://mainframe.nerdery.com/search?q=#{orderNumber}"
+
+  robot.respond /SO\d{6}/, (msg) ->
+    orderNumber = msg.match[0]
+    msg.send "https://mainframe.nerdery.com/search?q=#{orderNumber}"
+
 
