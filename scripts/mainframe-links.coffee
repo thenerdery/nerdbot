@@ -8,10 +8,14 @@
 #   None
 #
 # Commands:
-#   nerdbot roll (die|one) - Roll one six-sided dice
-#   nerdbot roll dice - Roll two six-sided dice
-#   nerdbot roll <x>d<y> - roll x dice, each of which has y sides
+#   [WS]O\d{6} - Return a Work Order or Sales Order link
 #
 # Author:
-#   ab9
-#
+#   sbausch@nerdery.com
+
+
+module.exports = (robot) ->
+  robot.respond /[WS]O\d{6}/, (msg) ->
+    orderNumber = msg.match[0]
+    msg.reply "https://mainframe.nerdery.com/search?q=#{orderNumber}"
+
