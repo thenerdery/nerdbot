@@ -15,11 +15,11 @@
 
 
 module.exports = (robot) ->
-  robot.respond /W0\d{6}/, (msg) ->
+  robot.hear /W0\d{6}/, (msg) ->
     orderNumber = msg.match[0]
     msg.send "https://mainframe.nerdery.com/search?q=#{orderNumber}"
 
-  robot.respond /SO\d{6}/, (msg) ->
+  robot.hear /SO\d{6}/, (msg) ->
     orderNumber = msg.match[0]
     msg.send "https://mainframe.nerdery.com/search?q=#{orderNumber}"
 
