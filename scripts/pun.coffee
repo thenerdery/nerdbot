@@ -37,6 +37,8 @@ module.exports = (robot) ->
       "I wondered why the baseball was getting bigger. Then it hit me!",
       "Broken pencils are pointless.",
       "Never trust an atom, they make up everything.",
-      "I don't recommend dating bridge builders, they have truss issues."
+      "I don't recommend dating bridge builders, they have truss issues.",
+      "I had a brat the other day, it was the wurst",
+      "Learning to dance is a two-step process."
     ]
     msg.send msg.random quotes
