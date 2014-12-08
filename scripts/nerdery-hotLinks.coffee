@@ -8,32 +8,32 @@
 #   None
 #
 # Commands:
-#   W0\d{6} - Return a Work Order link
-#   SO\d{6} - Return a Sales Order link
-#   OP\d{6} - Returns an Opportunity Link
-#   \w{5,20}-\d{1,5} - Returns a JIRA ticket link
+#   /(^|\s+)(W0\d{6})($|\s+)/ - Return a Work Order link
+#   /(^|\s+)(SO\d{6})($|\s+)/ - Return a Sales Order link
+#   /(^|\s+)(OP\d{5})($|\s+)/ - Returns an Opportunity Link
+#   /(^|\s+)(\w{5,20}-\d{1,5})($|\s+)/ - Returns a JIRA ticket link
 #
 # Author:
 #   sbausch@nerdery.com
 
-
+/(^|\s+)W0\d{6}($|\s+)/
 module.exports = (robot) ->
   # Mainframe Links
-  robot.hear /W0\d{6}/, (msg) ->
-    orderNumber = msg.match[0]
+  robot.hear /(^|\s+)(W0\d{6})($|\s+)/, (msg) ->
+    orderNumber = msg.match[2]
     msg.send "https://mainframe.nerdery.com/search?q=#{orderNumber}"
 
-  robot.hear /SO\d{6}/, (msg) ->
-    orderNumber = msg.match[0]
+  robot.hear /(^|\s+)(SO\d{6})($|\s+)/, (msg) ->
+    orderNumber = msg.match[2]
     msg.send "https://mainframe.nerdery.com/search?q=#{orderNumber}"
 
-  robot.hear /OP\d{5}/, (msg) ->
-    orderNumber = msg.match[0]
+  robot.hear  /(^|\s+)(OP\d{5})($|\s+)/, (msg) ->
+    orderNumber = msg.match[2]
     msg.send "https://mainframe.nerdery.com/search?q=#{orderNumber}"
 
   # JIRA Links
-  robot.hear /\w{5,20}-\d{1,5}/, (msg) ->
-    orderNumber = msg.match[0]
+  robot.hear /(^|\s+)(\w{5,20}-\d{1,5})($|\s+)/, (msg) ->
+    orderNumber = msg.match[2]
     msg.send "https://issues.nerdery.com/browse/#{orderNumber}"
 
 
