@@ -16,7 +16,6 @@
 # Author:
 #   sbausch@nerdery.com
 
-/(^|\s+)W0\d{6}($|\s+)/
 module.exports = (robot) ->
   # Mainframe Links
   robot.hear /(^|\s+)(W0\d{6})($|\s+)/, (msg) ->
