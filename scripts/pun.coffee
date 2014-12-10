@@ -40,6 +40,7 @@ module.exports = (robot) ->
       "I don't recommend dating bridge builders, they have truss issues.",
       "I had a brat the other day, it was the wurst",
       "Learning to dance is a two-step process.",
-      "Sign language is a handy thing to know"
+      "Sign language is a handy thing to know",
+      "She said I was just average. How Mean"
     ]
     msg.send msg.random quotes
