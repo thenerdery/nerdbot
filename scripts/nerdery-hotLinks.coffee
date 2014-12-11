@@ -8,10 +8,10 @@
 #   None
 #
 # Commands:
-#   /(^|\s+)(W0\d{6})($|\s+)/ - Return a Work Order link
-#   /(^|\s+)(SO\d{6})($|\s+)/ - Return a Sales Order link
-#   /(^|\s+)(OP\d{5})($|\s+)/ - Returns an Opportunity Link
-#   /(^|\s+)(\w{5,20}-\d{1,5})($|\s+)/ - Returns a JIRA ticket link
+#   W0###### - Return a Work Order link
+#   SO###### - Return a Sales Order link
+#   OP##### - Returns an Opportunity Link
+#   PROJECTKEY-### - Returns a JIRA ticket link
 #
 # Author:
 #   sbausch@nerdery.com
