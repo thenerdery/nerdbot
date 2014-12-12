@@ -17,12 +17,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/github/hubot.git"
+    "url": "https://github.com/thenerdery/nerdbot"
   },
   "dependencies": {
-    "hubot": ">= 2.6.0 < 3.0.0",
-    "hubot-scripts": ">= 2.5.0 < 3.0.0",
-    "hubot-hipchat": "https://github.com/MJSmith5/hubot-hipchat/tarball/master",
+    "hubot": ">=2.7.0 <3.0.0",
+    "hubot-scripts": ">=2.5.0 <3.0.0",
+    "hubot-hipchat": ">=2.7.0 <3.0.0",
     "xml2js": "0.1.14",
     "htmlparser": "1.7.6",
     "soupselect": "0.2.0",
