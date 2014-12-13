@@ -84,7 +84,7 @@ module.exports = (robot) ->
   karma = new Karma robot
   allow_self = process.env.KARMA_ALLOW_SELF or "true"
 
-  robot.hear /^(\S+[^+:\s])[: ]*(\+\+|ftw!*|FTW!*)($)/, (msg) ->
+  robot.hear /^(\S+[^+:\s])[: ]*(\+\+|ftw!*)($)/i, (msg) ->
     subject = msg.match[1].toLowerCase()
     if allow_self is true or msg.message.user.name.toLowerCase() != subject
       karma.increment subject
