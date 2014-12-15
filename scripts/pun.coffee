@@ -41,6 +41,7 @@ module.exports = (robot) ->
       "I had a brat the other day, it was the wurst",
       "Learning to dance is a two-step process.",
       "Sign language is a handy thing to know",
-      "She said I was just average. How Mean"
+      "She said I was just average. How Mean",
+      "Becoming a vegetarian is a huge missed steak."
     ]
     msg.send msg.random quotes
