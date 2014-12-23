@@ -43,5 +43,6 @@ module.exports = (robot) ->
       "Sign language is a handy thing to know",
       "She said I was just average. How Mean",
       "Becoming a vegetarian is a huge missed steak."
+      "Did you hear about the guy whose whole left side was cut off? He's all right now."
     ]
     msg.send msg.random quotes
