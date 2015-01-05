@@ -44,6 +44,7 @@ module.exports = (robot) ->
       "She said I was just average. How Mean",
       "Becoming a vegetarian is a huge missed steak.",
       "Did you hear about the guy whose whole left side was cut off? He's all right now.",
+      # Add new puns above here
       "I'm reading a book about anti-gravity. It's impossible to put down."
     ]
     msg.send msg.random quotes
