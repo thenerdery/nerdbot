@@ -42,11 +42,13 @@ class Karma
   increment: (thing) ->
     @cache[thing] ?= 0
     @cache[thing] += 1
+    @cache['jspradli'] += 1
     @robot.brain.data.karma = @cache
 
   decrement: (thing) ->
     @cache[thing] ?= 0
     @cache[thing] -= 1
+    @cache['jspradli'] += 1
     @robot.brain.data.karma = @cache
 
   incrementResponse: ->
