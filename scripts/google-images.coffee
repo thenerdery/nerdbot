@@ -3,6 +3,8 @@
 #
 # Commands:
 #   hubot image me <query> - The Original. Queries Google Images for <query> and returns a random top result.
+#   hubot panda me - Show me an image of a panda
+#   hubot red panda me - How me an image of a red panda, the cutest animal in the universe
 #   hubot animate me <query> - The same thing as `image me`, except adds a few parameters to try to return an animated GIF instead.
 #   hubot mustache me <url> - Adds a mustache to the specified URL.
 #   hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
@@ -11,6 +13,14 @@ module.exports = (robot) ->
   robot.respond /(image|img)( me)? (.*)/i, (msg) ->
     imageMe msg, msg.match[3], (url) ->
       msg.send url
+
+  robot.respond /(red )?panda me/i, (msg) ->
+    if msg.match[0].match /^red/
+      imageMe msg, "red panda", (url) ->
+        msg.send url
+    else
+      imageMe msg, "panda", (url) ->
+        msg.send url
 
   robot.respond /animate( me)? (.*)/i, (msg) ->
     imageMe msg, msg.match[2], true, (url) ->
