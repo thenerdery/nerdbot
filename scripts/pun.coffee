@@ -45,6 +45,7 @@ module.exports = (robot) ->
       "Becoming a vegetarian is a huge missed steak.",
       "Did you hear about the guy whose whole left side was cut off? He's all right now.",
       "Whiteboards are remarkable.",
+      "Santa must have moved his workshop to Brazil. All of our present boxes were marked 'Amazon'",
       # Add new puns above here
       "I'm reading a book about anti-gravity. It's impossible to put down."
     ]
