@@ -15,7 +15,7 @@ module.exports = (robot) ->
       msg.send url
 
   robot.respond /(red )?panda me/i, (msg) ->
-    if msg.match[0].match /^red/
+    if msg.match[0].match /red/
       imageMe msg, "red panda", (url) ->
         msg.send url
     else
