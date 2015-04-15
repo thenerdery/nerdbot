@@ -47,6 +47,7 @@ module.exports = (robot) ->
       "Whiteboards are remarkable.",
       "Santa must have moved his workshop to Brazil. All of our present boxes were marked 'Amazon'",
       "Chewbacca doesn't strike me as someone with experience. He's a bit of a wookie.",
+      "Have you heard about those new corduroy pillows? They're making headlines."
       # Add new puns above here
       "I'm reading a book about anti-gravity. It's impossible to put down."
     ]
