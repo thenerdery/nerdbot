@@ -34,8 +34,9 @@ module.exports = (robot) ->
     if results.length > 2
       msg.send "Found more then #{results.length - 1} results, please narrow down your search to one of the following: \n `#{_.pluck(results, 'string').join(', ')}`"
     else if results.length > 0
-      msg.send prepareResult result for result in results
-      msg.send prepareBrowserStuff result for result in results
+      for result in results
+        msg.send prepareResult result
+        msg.send prepareBrowserStuff result
     else
       msg.send "Nothing found for query *#{msg.match[1]}*, try something else or go to caniuse.com yourself"
 
