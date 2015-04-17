@@ -41,11 +41,11 @@ module.exports = (robot) ->
 
 prepareResult = (result) ->
   res_obj = exports.caniuse_data[result.string]
-  return "*#{res_obj.title}*\n http://caniuse.com/#feat=#{result.string}"
+  return "#{result.string}\n #{res_obj.description}\n http://caniuse.com/#feat=#{result.string}\n #{result.spec}"
 
 prepareBrowserStuff = (result) ->
   res_obj = exports.caniuse_data[result.string]
-  return "/code #{browserVersion res_obj.stats}"
+  return "/code Browser Supprt \n #{browserVersion res_obj.stats}"
 
 browserVersion = (stats) ->
   support = []
@@ -57,5 +57,5 @@ browserVersion = (stats) ->
           supported.push v.split('-')[0]
     min_supported = _.min(supported, (x) -> parseFloat(x))
     min_supported_clean = if (min_supported == Infinity) then "-" else "#{min_supported}+"
-    support.push "#{browser}:#{min_supported_clean}"
+    support.push "#{browser}: #{min_supported_clean}"
   return support.join('\n')
