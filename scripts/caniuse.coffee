@@ -41,11 +41,11 @@ module.exports = (robot) ->
 
 prepareResult = (result) ->
   res_obj = exports.caniuse_data[result.string]
-  return "#{result.string}\n #{res_obj.description}\n http://caniuse.com/#feat=#{result.string}\n #{result.spec}"
+  return "#{result.title}\n #{res_obj.description}\n http://caniuse.com/#feat=#{result.string}\n #{res_obj.spec}"
 
 prepareBrowserStuff = (result) ->
   res_obj = exports.caniuse_data[result.string]
-  return "/code Browser Supprt \n #{browserVersion res_obj.stats}"
+  return "/code Browser Support\n------------\n#{browserVersion res_obj.stats}"
 
 browserVersion = (stats) ->
   support = []
