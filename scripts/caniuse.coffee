@@ -41,7 +41,7 @@ module.exports = (robot) ->
 
 prepareResult = (result) ->
   res_obj = exports.caniuse_data[result.string]
-  return "#{result.title}\n #{res_obj.description}\n http://caniuse.com/#feat=#{result.string}\n #{res_obj.spec}"
+  return "#{res_obj.title}\n #{res_obj.description}\n http://caniuse.com/#feat=#{result.string}\n #{res_obj.spec}"
 
 prepareBrowserStuff = (result) ->
   res_obj = exports.caniuse_data[result.string]
