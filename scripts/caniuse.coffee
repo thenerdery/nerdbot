@@ -34,21 +34,14 @@ module.exports = (robot) ->
     if results.length > 2
       msg.send "Found more then #{results.length - 1} results, please narrow down your search to one of the following: \n `#{_.pluck(results, 'string').join(', ')}`"
     else if results.length > 0
-      messages = []
       for result in results
-        messages.push prepareResult result
-        messages.push prepareBrowserStuff result
-      msg.send messages
+        msg.send prepareResult result
     else
       msg.send "Nothing found for query *#{msg.match[1]}*, try something else or go to caniuse.com yourself"
 
 prepareResult = (result) ->
   res_obj = exports.caniuse_data[result.string]
-  return "#{res_obj.title}\n #{res_obj.description}\n http://caniuse.com/#feat=#{result.string}\n #{res_obj.spec}"
-
-prepareBrowserStuff = (result) ->
-  res_obj = exports.caniuse_data[result.string]
-  return "/code Browser Support\n------------\n#{browserVersion res_obj.stats}"
+  return "#{res_obj.title}\n #{res_obj.description}\n http://caniuse.com/#feat=#{result.string}\n #{res_obj.spec} \n------------\nBrowser Support\n------------\n#{browserVersion res_obj.stats}"
 
 browserVersion = (stats) ->
   support = []
