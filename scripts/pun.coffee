@@ -50,6 +50,7 @@ module.exports = (robot) ->
       "Have you heard about those new corduroy pillows? They're making headlines.",
       "If you love dictionaries so much why don't you Merriam.",
       # Add new puns above here
-      "I'm reading a book about anti-gravity. It's impossible to put down."
+      "I'm reading a book about anti-gravity. It's impossible to put down.",
+      "/em fails to pun."
     ]
     msg.send msg.random quotes
