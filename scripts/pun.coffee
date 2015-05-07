@@ -55,8 +55,8 @@ module.exports = (robot) ->
       "If you love dictionaries so much why don't you Merriam.",
       "It takes ten-tickles to make a squid laugh.",
       "I don't trust these stairs because they're always up to something.",
-      # Add new puns above here
       "I'm reading a book about anti-gravity. It's impossible to put down.",
+      # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
     msg.send msg.random quotes
