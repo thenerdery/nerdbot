@@ -48,7 +48,12 @@ module.exports = (robot) ->
       "Santa must have moved his workshop to Brazil. All of our present boxes were marked 'Amazon'",
       "Chewbacca doesn't strike me as someone with experience. He's a bit of a wookie.",
       "Have you heard about those new corduroy pillows? They're making headlines.",
+      "A new type of broom came out, it is sweeping the nation.",
+      "There is no gambling in africa because there are too many cheetahs.",
+      "I swallowed some food coloring the other day and I feel like I've dyed inside.",
+      "I bought a pair of shoes from a drug dealer. I'm not sure what he laced them with but I've been tripping all day.",
       "If you love dictionaries so much why don't you Merriam.",
+      "It takes ten-tickles to make a squid laugh."
       # Add new puns above here
       "I'm reading a book about anti-gravity. It's impossible to put down.",
       "/em fails to pun."
