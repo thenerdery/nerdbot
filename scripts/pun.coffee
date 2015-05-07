@@ -53,9 +53,9 @@ module.exports = (robot) ->
       "I swallowed some food coloring the other day and I feel like I've dyed inside.",
       "I bought a pair of shoes from a drug dealer. I'm not sure what he laced them with but I've been tripping all day.",
       "If you love dictionaries so much why don't you Merriam.",
-      "It takes ten-tickles to make a squid laugh."
-      # Add new puns above here
+      "It takes ten-tickles to make a squid laugh.",
       "I'm reading a book about anti-gravity. It's impossible to put down.",
+      # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
     msg.send msg.random quotes
