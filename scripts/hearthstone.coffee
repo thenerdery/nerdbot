@@ -20,7 +20,7 @@ querystring = require 'querystring';
 module.exports = (robot) ->
   robot.respond /hearth(gold)? (.+)/i, (msg) ->
     gold = msg.match[1] == "gold"
-    card = msg.match[2] || "Dismal%20Failure"
+    card = msg.match[2] || "failure"
     url = "https://omgvamp-hearthstone-v1.p.mashape.com/cards/#{card}"
 
     robot.http(url, {rejectUnauthorized: false})
@@ -33,7 +33,7 @@ module.exports = (robot) ->
         data = JSON.parse(body)[0]
 
         if !data?
-          msg.send "No card with this namo."
+          msg.send "No card found with this name."
           return
 
         msg.send if gold then data.imgGold else data.img
