@@ -14,7 +14,7 @@ This is The Nerdery's [Hubot](https://github.com/github/hubot). Nerds: Hop in th
  
 To run, start redis and initialize with a shell
 
- # `&redis-server /usr/local/etc/redis.conf`
+ # `redis-server /usr/local/etc/redis.conf &`
  # `bin/hubot -a shell`
 
 To test your scripts, type commands such as `hubot howdy`
