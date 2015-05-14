@@ -27,6 +27,7 @@ module.exports = (robot) ->
       "#{person} could implement all of #{tech} in like ten lines of Erlang. Tops.",
       "#{person} has demonstrated that #{tech} is simultaneously past its prime, and not yet ready for primetime.",
       "#{person} is trying to bring #{tech} before a war crimes tribunal at The Hague.",
+      "#{person} knows that #{tech} is so brittle, osteoporosis sufferers feel bad for it.",
       # Add new trash talk templates here. Don't forget your trailing comma
       "/em #{person} thinks #{tech} is just fine."
     ]
