@@ -21,7 +21,7 @@ module.exports = (robot) ->
       "#{person} is convinced that JHipster is a faster development platform than #{tech}.",
       "#{person} can do more pushups than of all our #{tech} developers combined.",
       "#{person} created a #{tech} framework so performant it broke Einstein's theory of relativity, so #{person} deleted it.",
-      "Usually #{person} grabs a random person's Jimmy John's sandwich and eat it for lunch. Free lunch tastes so much better when you're hacking on #{tech}.",
+      "Usually #{person} grabs a random person's Jimmy John's sandwich and eats it for lunch. Free lunch tastes so much better when you're hacking on #{tech}.",
       "#{person} will let you know that anyone who uses #{tech} is a total poser.",
       "#{person} is frankly embarrassed at how slow #{tech} is on https://www.techempower.com/benchmarks/.",
       "#{person} could implement all of #{tech} in like ten lines of Erlang. Tops.",
