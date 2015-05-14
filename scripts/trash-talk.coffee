@@ -1,5 +1,5 @@
 # Description:
-#   Bot will quote somebody as talking trash about something.
+#   Bot will quote somebody as talking trash about some technology.
 #
 # Dependencies:
 #   None
@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot Does <person> have an opinion about <technology>[?]
+#   hubot Does <person> have an opinion about <technology>[?] - <person> talks trash about <technology>.
 #
 # Author:
 #   snackCake
