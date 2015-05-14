@@ -8,13 +8,13 @@
 #   None
 #
 # Commands:
-#   hubot what does <person> think about <tech>[?]
+#   hubot Does <person> have an opinion about <technology>[?]
 #
 # Author:
 #   snackCake
 
 module.exports = (robot) ->
-  robot.respond /what does (.+) think about ([^?]+)\??/i, (msg) ->
+  robot.respond /Does (.+) have an opinion about ([^?]+)\??/i, (msg) ->
     person = msg.match[1]
     tech = msg.match[2]
     quotes = [
