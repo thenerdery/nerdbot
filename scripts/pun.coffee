@@ -58,6 +58,8 @@ module.exports = (robot) ->
       "I would enjoy perfume commercials a lot more if they actually made scents.",
       "I'm reading a book about anti-gravity. It's impossible to put down.",
       "Why do java programmers wear glasses? Because they don’t C#.",
+      "Calculus jokes are too derivative for my tastes.",
+      "When Buzz Aldrin had to retire, he wasn't over the moon about it.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
