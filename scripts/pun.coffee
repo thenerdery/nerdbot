@@ -57,6 +57,7 @@ module.exports = (robot) ->
       "I don't trust these stairs because they're always up to something.",
       "I would enjoy perfume commercials a lot more if they actually made scents.",
       "I'm reading a book about anti-gravity. It's impossible to put down.",
+      "Why do java programmers wear glasses? Because they don’t C#.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
