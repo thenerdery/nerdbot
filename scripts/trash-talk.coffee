@@ -32,3 +32,6 @@ module.exports = (robot) ->
       "/em #{person} thinks #{tech} is just fine."
     ]
     msg.send msg.random quotes
+
+  robot.hear /nerbot/i, (msg) ->
+    msg.send "It's \"nerDbot.\" Come on, now. My three year old cousin can spell better than that."
