@@ -8,15 +8,15 @@
 #   None
 #
 # Commands:
-#   hubot Does <person> have an opinion about <technology>[?] - <person> talks trash about <technology>.
+#   hubot Does <person> have an opinion (about|on) <technology>[?] - <person> talks trash about <technology>.
 #
 # Author:
 #   snackCake
 
 module.exports = (robot) ->
-  robot.respond /Does (.+) have an opinion about ([^?]+)\??/i, (msg) ->
+  robot.respond /Does (.+) have an opinion (about|on) ([^?]+)\??/i, (msg) ->
     person = msg.match[1]
-    tech = msg.match[2]
+    tech = msg.match[3]
     quotes = [
       "#{person} is convinced that JHipster is a faster development platform than #{tech}.",
       "#{person} can do more pushups than of all our #{tech} developers combined.",
