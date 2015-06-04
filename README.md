@@ -32,4 +32,4 @@ To add new commands, find an [existing Hubot script](http://hubot-script-catalog
 * Fork the repo, and clone it locally.
 * Add .coffee file to `scripts` folder
 * Push to your fork and submit a pull request.
-** It is considered good form to add a pun to pun.coffee with every pull request
+    * It is considered good form to add a pun to pun.coffee with every pull request
