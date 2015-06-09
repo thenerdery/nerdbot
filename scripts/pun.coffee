@@ -62,6 +62,7 @@ module.exports = (robot) ->
       "When Buzz Aldrin had to retire, he wasn't over the moon about it.",
       "Claustrophobic people are more productive thinking outside the box.",
       "You know what's annoying about broom-maker discussions? All the straw man arguments.",
+      "Some guy just threw a bottle of milk at my head.  How dairy!",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
