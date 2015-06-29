@@ -137,7 +137,6 @@ memeGenerator = (msg, imageName, text1, text2, callback) ->
       msg.http(res.headers.location).get() processResult
       return
     if res.statusCode == 302
-      msg.reply "#{res.headers.location}"
       callback res.headers.location
       return
     if res.statusCode > 300
