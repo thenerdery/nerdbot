@@ -16,11 +16,18 @@
 module.exports = (robot) ->
   robot.hear /doin'? one/i, (msg) ->
     now = new Date()
-    untilFivePm = 16 - now.getHours()
+    targetTime = 17
+    if now.getDay() is 5
+      targetTime = 16
+
+    untilFivePm = targetTime - now.getHours()
     minutes = 60 - now.getMinutes()
     seconds = 60 - now.getSeconds()
     message = ""
     beerUrl = ""
+
+    if now.getDay() is 0 or now.getDay() is 6
+      untilFivePm = 0
 
     if untilFivePm < 0
       message = "OMFG YER LATE!"
@@ -46,3 +53,6 @@ module.exports = (robot) ->
           beerUrl = data.responseData.results[target].tbUrl + "#.png"
           msg.send message
           msg.send beerUrl
+
+  robot.hear /doin'? two/i, (msg) ->
+    msg.send "No.  No, man.  Excrement, no, man.  I believe you'd get your posterior kicked sayin' something like that, man."
