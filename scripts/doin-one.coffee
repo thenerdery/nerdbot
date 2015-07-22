@@ -29,7 +29,7 @@ module.exports = (robot) ->
     if now.getDay() is 0 or now.getDay() is 6
       untilFivePm = 0
 
-    if untilFivePm < 0
+    if untilFivePm <= 0
       message = "OMFG YER LATE!"
     if untilFivePm > 0
       message = "T-#{minutes}:#{seconds} and counting..."
