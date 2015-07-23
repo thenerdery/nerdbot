@@ -66,7 +66,7 @@ module.exports = (robot) ->
       "Pavlov? It rings a bell.",
       "I accidentally left my vacuum cleaner running all night. I guess you could say it was an overnight suck excess.",
       "I was going to write a skeleton pun, but none of my ideas were humerus.",
-      "Deaf mathematicians communicate through sin language.",
+      "Deaf mathematicians communicate through sine language.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
