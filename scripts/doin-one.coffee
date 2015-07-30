@@ -14,11 +14,28 @@
 #   Drew
 
 module.exports = (robot) ->
-  robot.hear /doin'? one/i, (msg) ->
+  robot.hear /doin'? (one|1)/i, (msg) ->
+    timeBasedMessage(msg)
+
+  robot.hear /doin'? (two|three|four|five|2|3|4|5)/i, (msg) ->
+    msg.send "No.  No, man.  Excrement, no, man.  I believe you'd get your posterior kicked sayin' something like that, man."
+
+  robot.hear /do one/i, (msg) ->
+    room = msg.message.room
+
+    if room is "Doin' One"
+      timeBasedMessage(msg)
+
+  timeBasedMessage = (msg) ->
     now = new Date()
     targetTime = 17
     if now.getDay() is 5
       targetTime = 16
+
+    padTime = (number) ->
+      pad = "0000"
+      output = pad + number + ""
+      output.substr(output.length - 2);
 
     untilFivePm = targetTime - now.getHours()
     minutes = 60 - now.getMinutes()
@@ -32,7 +49,7 @@ module.exports = (robot) ->
     if untilFivePm <= 0
       message = "OMFG YER LATE!"
     if untilFivePm > 0
-      message = "T-#{minutes}:#{seconds} and counting..."
+      message = "T-00:#{padTime(minutes)}:#{padTime(seconds)} and counting..."
     if untilFivePm > 1
       message = "It's so close I can taste it..."
     if untilFivePm > 2
@@ -53,6 +70,3 @@ module.exports = (robot) ->
           beerUrl = data.responseData.results[target].tbUrl + "#.png"
           msg.send message
           msg.send beerUrl
-
-  robot.hear /doin'? two/i, (msg) ->
-    msg.send "No.  No, man.  Excrement, no, man.  I believe you'd get your posterior kicked sayin' something like that, man."
