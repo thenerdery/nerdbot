@@ -8,11 +8,11 @@
 #   None
 #
 # Commands:
-#   thanks mr skeltal
+#   thank mr skeltal
 #
 # Author:
 #   jmullin
 
 module.exports = (robot) ->
-  robot.respond /thanks? mr skeltal/i, (msg) ->
+  robot.hear /^thanks? mr skeltal|doot doot$/i, (msg) ->
     msg.send 'http://media.giphy.com/media/p7PU6lbV4Rq3C/giphy.gif'
