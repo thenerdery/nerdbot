@@ -21,5 +21,8 @@
   "redis-brain.coffee",
   "remind.coffee",
   "ruby.coffee",
-  "wikipedia.coffee"
+  "wikipedia.coffee",
+  "flip.coffee",
+  "clojure.coffee",
+  "haskell.coffee"
 ]
