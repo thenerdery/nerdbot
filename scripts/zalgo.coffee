@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   zalgo
+#   hubot zalgo [message]
 #
 # Author:
 #   jmullin
