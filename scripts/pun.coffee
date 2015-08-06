@@ -64,6 +64,7 @@ module.exports = (robot) ->
       "You know what's annoying about broom-maker discussions? All the straw man arguments.",
       "Some guy just threw a bottle of milk at my head.  How dairy!",
       "Pavlov? It rings a bell.",
+      "I always throw away my leftovers.  I just can't stand the thought of my food going to waist.",
       "I accidentally left my vacuum cleaner running all night. I guess you could say it was an overnight suck excess.",
       "I was going to write a skeleton pun, but none of my ideas were humerus.",
       "Deaf mathematicians communicate through sine language.",
