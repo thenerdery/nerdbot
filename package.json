@@ -36,7 +36,9 @@
     "soupselect": "0.2.0",
     "underscore": "1.3.3",
     "underscore.string": "2.3.0",
-    "xml2js": "0.1.14"
+    "xml2js": "0.1.14",
+    "zalgotxt": "0.1.0",
+    "flip": "~0.1.0"
   },
   "engines": {
     "node": "0.10.35",
