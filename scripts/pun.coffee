@@ -70,6 +70,7 @@ module.exports = (robot) ->
       "I was going to write a skeleton pun, but none of my ideas were humerus.",
       "Deaf mathematicians communicate through sine language.",
       "It's not that the man did not know how to juggle, he just didn't have the balls to do it.",
+      "I wanted to get faster computer memory but I didn't have the cache.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
