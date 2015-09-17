@@ -41,7 +41,7 @@ imageMe = (msg, query, animated, faces, cb) ->
   cb = animated if typeof animated == 'function'
   cb = faces if typeof faces == 'function'
   q = v: '1.0', rsz: '8', q: query, safe: 'active'
-  q.filetype = 'gif' if typeof animated is 'boolean' and animated is true
+  q.as_filetype = 'gif' if typeof animated is 'boolean' and animated is true
   q.imgtype = 'animated' if typeof animated is 'boolean' and animated is true
   q.q = 'animated ' + q.q if typeof animated is 'boolean' and animated is true
   q.imgtype = 'face' if typeof faces is 'boolean' and faces is true
