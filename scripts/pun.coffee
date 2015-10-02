@@ -57,7 +57,7 @@ module.exports = (robot) ->
       "I don't trust these stairs because they're always up to something.",
       "I would enjoy perfume commercials a lot more if they actually made scents.",
       "I'm reading a book about anti-gravity. It's impossible to put down.",
-      "Why do java programmers wear glasses? Because they don’t C#.",
+      "Why do java programmers wear glasses? Because they don't C#.",
       "Calculus jokes are too derivative for my tastes.",
       "When Buzz Aldrin had to retire, he wasn't over the moon about it.",
       "Claustrophobic people are more productive thinking outside the box.",
@@ -72,6 +72,7 @@ module.exports = (robot) ->
       "It's not that the man did not know how to juggle, he just didn't have the balls to do it.",
       "I wanted to get faster computer memory but I didn't have the cache.",
       "Old programmers never die, they just can't C as well.",
+      "I got angry when my phone battery died. My psychiatrist suggested I find an outlet.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
