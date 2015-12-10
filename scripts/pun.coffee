@@ -73,6 +73,7 @@ module.exports = (robot) ->
       "I wanted to get faster computer memory but I didn't have the cache.",
       "Old programmers never die, they just can't C as well.",
       "I got angry when my phone battery died. My psychiatrist suggested I find an outlet.",
+      "I took about a billion pictures of that wheat field, but none of them turned out!  They were all too grainy.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
