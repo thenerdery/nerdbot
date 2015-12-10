@@ -1,5 +1,9 @@
 # Description:
-#   A way to search images on giphy.com.  Forked from 
+# A way to search images on giphy.com.  Forked from the hubot script of the same name:
+# https://github.com/github/hubot-scripts/blob/master/src/scripts/giphy.coffee), with
+# 'animate (me)' command added and default behavior to produce a gif when the query
+# has no hits.
+
 #
 # Configuration:
 #   HUBOT_GIPHY_API_KEY
