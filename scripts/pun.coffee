@@ -74,6 +74,7 @@ module.exports = (robot) ->
       "Old programmers never die, they just can't C as well.",
       "I got angry when my phone battery died. My psychiatrist suggested I find an outlet.",
       "I took about a billion pictures of that wheat field, but none of them turned out!  They were all too grainy.",
+      "I wasn't going to get a brain transplant, but then I changed my mind.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
