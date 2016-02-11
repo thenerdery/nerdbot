@@ -25,9 +25,6 @@ module.exports = (robot) ->
 
     msg.send nameError(nameA) if (!idA?)
     msg.send nameError(nameB) if (!idB?)
-    
-    if (errorMessage?)
-      msg.send errorMessage
 
     if (idA? && idB?)
       msg.send (url.replace /:a/g, idA).replace /:b/g, idB
