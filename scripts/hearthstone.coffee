@@ -30,7 +30,9 @@ module.exports = (robot) ->
           msg.send "Failed to load card."
           return
 
-        data = JSON.parse(body)[0]
+        data = JSON.parse(body)
+
+        data = (card for card in data when card.img?)[0]
 
         if !data?
           msg.send "No card found with this name."
