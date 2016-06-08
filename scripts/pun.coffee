@@ -77,6 +77,7 @@ module.exports = (robot) ->
       "I wasn't going to get a brain transplant, but then I changed my mind.",
       "If your books keep falling on the floor, don't make excuses. You only have your shelf to blame.",
       "Never play golf without a spare pair of pants. It will definitely come in handy if you get a hole in one.",
+      "Using a keyboard with a home sound system would be stereotyping.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]

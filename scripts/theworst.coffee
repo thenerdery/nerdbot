@@ -74,6 +74,7 @@ crap = () ->
 literal = () ->
   #return
   [ 
+    "Beal is",
     "Ruby is",
     "Emacs is",
     "Oboe is",
