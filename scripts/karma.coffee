@@ -100,7 +100,7 @@ module.exports = (robot) ->
     else
       msg.send msg.random karma.selfDeniedResponses(msg.message.user.name)
 
-  robot.respond /karma empty ?(\S+[^-\s])$/i, (msg) ->
+  robot.respond /karma empty ?(\S+[^-\s])\s*$/i, (msg) ->
     subject = msg.match[1].toLowerCase()
     if allow_self is true or msg.message.user.name.toLowerCase() != subject
       karma.kill subject
@@ -108,19 +108,19 @@ module.exports = (robot) ->
     else
       msg.send msg.random karma.selfDeniedResponses(msg.message.user.name)
 
-  robot.respond /karma( best)?$/i, (msg) ->
+  robot.respond /karma( best)?\s*$/i, (msg) ->
     verbiage = ["The Best"]
     for item, rank in karma.top()
       verbiage.push "#{rank + 1}. #{item.name} - #{item.karma}"
     msg.send verbiage.join("\n")
 
-  robot.respond /karma worst$/i, (msg) ->
+  robot.respond /karma worst\s*$/i, (msg) ->
     verbiage = ["The Worst"]
     for item, rank in karma.bottom()
       verbiage.push "#{rank + 1}. #{item.name} - #{item.karma}"
     msg.send verbiage.join("\n")
 
-  robot.respond /karma (\S+[^-\s])$/i, (msg) ->
+  robot.respond /karma (\S+[^-\s])\s*$/i, (msg) ->
     match = msg.match[1].toLowerCase()
     if match != "best" && match != "worst"
       msg.send "\"#{match}\" has #{karma.get(match)} karma."
