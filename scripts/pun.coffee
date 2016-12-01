@@ -78,6 +78,7 @@ module.exports = (robot) ->
       "If your books keep falling on the floor, don't make excuses. You only have your shelf to blame.",
       "Never play golf without a spare pair of pants. It will definitely come in handy if you get a hole in one.",
       "Using a keyboard with a home sound system would be stereotyping.",
+      "I think my printer must be a jazz musician, it's always jamming.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
