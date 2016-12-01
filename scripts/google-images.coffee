@@ -8,8 +8,16 @@
 #   hubot animate me <query> - The same thing as `image me`, except adds a few parameters to try to return an animated GIF instead.
 #   hubot mustache me <url> - Adds a mustache to the specified URL.
 #   hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
+#   hubot ring the bell <project-id> - Celebrate the successful completion of a project
 
 module.exports = (robot) ->
+  robot.respond /(ring the bell) ?(.*)?/i, (msg) ->
+    imageMe msg, 'celebration', (url) -> 
+      msg.send url
+    if msg.match[2]
+      projectNumber = encodeURIComponent msg.match[2]
+      msg.send "https://mainframe.nerdery.com/new_edit_project_admin.php?id=#{projectNumber}" 
+      
   robot.respond /(image|img)( me)? (.*)/i, (msg) ->
     imageMe msg, msg.match[3], (url) ->
       msg.send url
