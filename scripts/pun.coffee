@@ -79,6 +79,7 @@ module.exports = (robot) ->
       "Never play golf without a spare pair of pants. It will definitely come in handy if you get a hole in one.",
       "Using a keyboard with a home sound system would be stereotyping.",
       "When the cheese factory exploded, it was an awful mess to clean up. The brie was everywhere!",
+      "I think my printer must be a jazz musician, it's always jamming.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
