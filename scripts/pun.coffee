@@ -80,6 +80,7 @@ module.exports = (robot) ->
       "Using a keyboard with a home sound system would be stereotyping.",
       "When the cheese factory exploded, it was an awful mess to clean up. The brie was everywhere!",
       "I think my printer must be a jazz musician, it's always jamming.",
+      "I tried really hard to make my banking career work out, but I just kept losing interest.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
