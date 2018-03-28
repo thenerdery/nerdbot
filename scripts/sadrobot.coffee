@@ -20,13 +20,13 @@ module.exports = (robot) ->
   baseUrl = "http://sadrobot.nerderylabs.com"
 
   robot.hear /\[\[([^\]]+)\]\]/g, (msg) ->
-    if msg.message.room is "Magic"
+    if msg.message.room is "magic"
       for match in msg.match
         robot.http("#{baseUrl}/byName")
           .post(match.substring(2, match.length - 2)) (err, res, body) ->
 
   robot.hear /\{\{([^\}]+)\}\}/g, (msg) ->
-    if msg.message.room is "Magic"
+    if msg.message.room is "magic"
       for match in msg.match
         robot.http("#{baseUrl}/byQuery")
           .post(match.substring(2, match.length - 2)) (err, res, body) ->
