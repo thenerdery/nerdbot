@@ -81,6 +81,7 @@ module.exports = (robot) ->
       "When the cheese factory exploded, it was an awful mess to clean up. The brie was everywhere!",
       "I think my printer must be a jazz musician, it's always jamming.",
       "I tried really hard to make my banking career work out, but I just kept losing interest.",
+      "The shovel was quite a ground-breaking invention.",
       # Add new puns above here. Don't forget your trailing comma
       "/em fails to pun."
     ]
